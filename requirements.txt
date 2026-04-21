@@ -1,0 +1,5 @@
+fastapi
+requests
+dune-client
+joblib
+uvicorn
