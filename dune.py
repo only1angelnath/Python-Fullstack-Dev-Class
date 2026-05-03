@@ -36,6 +36,7 @@ def get_dune_client() -> DuneClient:
 
 
 def is_cache_valid() -> bool:
+    
     return (
         _cache["data"] is not None
         and (time.time() - _cache["fetched_at"]) < CACHE_TTL_SECONDS
