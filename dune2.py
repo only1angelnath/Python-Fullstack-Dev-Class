@@ -75,18 +75,26 @@ class QueryConfig:
 #       description="What this query does",
 #   ),
 QUERY_REGISTRY: dict[str, QueryConfig] = {
-    "stablecoins": QueryConfig(
-        query_id=5681885,
-        description="Weekly Mint, Burn, and Circulating Supply of Major Stablecoins on Ethereum",
+    "prxvttokenoverview": QueryConfig(
+        query_id=6561987,
+        description="Token overview for PRXVT (supply, holders, stakers etc)",
     ),
-    "traders": QueryConfig(
-        query_id=5972407,
-        description="Random traders on Ethereum (their activity, value and consistency in the last 365 days)",
+     "prxvttokenprice": QueryConfig(
+        query_id=6569567,
+        description="Historical token price for PRXVT",
+    ),
+    "prxvttopholders": QueryConfig(
+        query_id=6562074,
+        description="Top token holders in the PRXVT protocol",
     ),
     "prxvtstakers": QueryConfig(
         query_id=6556289,
         description="Top stakers in the PRXVT protocol",
-    )
+    ),
+    "prxvtliquiditypools": QueryConfig(
+        query_id=6575188,
+        description="Liquidity pools in the PRXVT protocol",
+    ),
     # "ronin": QueryConfig(
     #     query_id=5785149,
     #     description="Katana Ronin Volume & User Segmentation",
