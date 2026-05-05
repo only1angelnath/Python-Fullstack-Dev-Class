@@ -547,7 +547,7 @@ async def root(request: Request):
     """
     base_url = str(request.base_url).rstrip("/")
     return {
-        "message": "Welcome to the Dune Data API!",
+        "message": "Welcome to the PRXVT Token Dune Data API!",
         "version": "1.0.0",
         "status": "online",
         "documentation": f"{base_url}/docs",
